@@ -8,7 +8,15 @@ func compare(value int) string {
 	secretValue := 88
 
 	//Insert your code from here
-
+	if value == secretValue {
+		fmt.Println("Well done, Correct Guess")
+	}
+	if value < secretValue {
+		fmt.Println("Too Low, try again")
+	}
+	if value > secretValue {
+		fmt.Println("Too high, try again")
+	}
 	//do not remove this line
 	return resultMessge
 }
